@@ -15,7 +15,7 @@ SPSL.h and SPSL.c - The declaration of the global and local variables, objects, 
 
 --- EStop() - Stops both timers (kills control updates), pulls a vaccum on the sink grounding all ot the soft-pneumatic actuators, and opens the vent valves for all of the actuators (sucks the air out of the SPSL).
 
---- VENT() - Stops both timers (kills control updates), turns off the compressor, and opens the vent valves for all of the actuators (venting passively to ATM).
+--- Vent() - Stops both timers (kills control updates), turns off the compressor, and opens the vent valves for all of the actuators (venting passively to ATM).
 
 --- ControlUpdate() - Computes the current control outputs based on previous contoller states. PI control with zero-error cross over reset for intergral windup prevention. Gathers and computes the actiivty category the user is performing based on previous IMU information and controller states. The activity category performes gain scheduling and desired pressures to adjust the fit of the SPSL.
 
